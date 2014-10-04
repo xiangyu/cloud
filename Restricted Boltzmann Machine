@@ -88,9 +88,9 @@
   </mrow>
 </mstyle>
 <annotation encoding="math/asciimath">G = (V, E)</annotation></semantics></math>:<br><br></p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
-  <mi>p</mi>
+  <mi>P</mi>
   <mo stretchy="false">(</mo>
-  <mi>X</mi>
+  <mi>x</mi>
   <mo stretchy="false">)</mo>
   <mo>=</mo>
   <mrow class="MJX-TeXAtom-ORD">
@@ -102,12 +102,12 @@
         </munder>
         <mrow class="MJX-TeXAtom-ORD">
           <msub>
-            <mi mathvariant="normal">Ψ<!-- Ψ --></mi>
+            <mi>ψ<!-- ψ --></mi>
             <mi>c</mi>
           </msub>
           <mo stretchy="false">(</mo>
           <msub>
-            <mi>X</mi>
+            <mi>x</mi>
             <mi>c</mi>
           </msub>
           <mo stretchy="false">)</mo>
@@ -121,7 +121,7 @@
   <mo>=</mo>
   <munder>
     <mo>∑<!-- ∑ --></mo>
-    <mi>X</mi>
+    <mi>x</mi>
   </munder>
   <mrow class="MJX-TeXAtom-ORD">
     <munder>
@@ -130,27 +130,34 @@
     </munder>
     <mrow class="MJX-TeXAtom-ORD">
       <msub>
-        <mi mathvariant="normal">Ψ<!-- Ψ --></mi>
+        <mi>ψ<!-- ψ --></mi>
         <mi>c</mi>
       </msub>
       <mo stretchy="false">(</mo>
       <msub>
-        <mi>X</mi>
+        <mi>x</mi>
         <mi>c</mi>
       </msub>
       <mo stretchy="false">)</mo>
     </mrow>
   </mrow>
   <mspace linebreak="newline"></mspace>
-  <mi>p</mi>
+  <mi>P</mi>
   <mo stretchy="false">(</mo>
-  <mi>X</mi>
+  <mi>x</mi>
   <mo stretchy="false">)</mo>
   <mo>=</mo>
   <mrow class="MJX-TeXAtom-ORD">
     <mfrac>
       <mn>1</mn>
-      <mi>Z</mi>
+      <msup>
+        <mi>e</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>l</mi>
+          <mi>n</mi>
+          <mi>Z</mi>
+        </mrow>
+      </msup>
     </mfrac>
   </mrow>
   <msup>
@@ -166,12 +173,12 @@
         </munder>
         <mrow class="MJX-TeXAtom-ORD">
           <msub>
-            <mi mathvariant="normal">Ψ<!-- Ψ --></mi>
+            <mi>ψ<!-- ψ --></mi>
             <mi>c</mi>
           </msub>
           <mo stretchy="false">(</mo>
           <msub>
-            <mi>X</mi>
+            <mi>x</mi>
             <mi>c</mi>
           </msub>
           <mo stretchy="false">)</mo>
@@ -183,7 +190,14 @@
   <mrow class="MJX-TeXAtom-ORD">
     <mfrac>
       <mn>1</mn>
-      <mi>Z</mi>
+      <msup>
+        <mi>e</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>l</mi>
+          <mi>n</mi>
+          <mi>Z</mi>
+        </mrow>
+      </msup>
     </mfrac>
   </mrow>
   <msup>
@@ -199,12 +213,12 @@
         <mspace width="thinmathspace"></mspace>
         <mrow class="MJX-TeXAtom-ORD">
           <msub>
-            <mi mathvariant="normal">Ψ<!-- Ψ --></mi>
+            <mi>ψ<!-- ψ --></mi>
             <mi>c</mi>
           </msub>
           <mo stretchy="false">(</mo>
           <msub>
-            <mi>X</mi>
+            <mi>x</mi>
             <mi>c</mi>
           </msub>
           <mo stretchy="false">)</mo>
@@ -213,15 +227,22 @@
     </mrow>
   </msup>
   <mspace linebreak="newline"></mspace>
-  <mi>p</mi>
+  <mi>P</mi>
   <mo stretchy="false">(</mo>
-  <mi>X</mi>
+  <mi>x</mi>
   <mo stretchy="false">)</mo>
   <mo>=</mo>
   <mrow class="MJX-TeXAtom-ORD">
     <mfrac>
       <mn>1</mn>
-      <mi>Z</mi>
+      <msup>
+        <mi>e</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>l</mi>
+          <mi>n</mi>
+          <mi>Z</mi>
+        </mrow>
+      </msup>
     </mfrac>
   </mrow>
   <msup>
@@ -251,21 +272,25 @@
       <mspace width="thinmathspace"></mspace>
       <mrow class="MJX-TeXAtom-ORD">
         <msub>
-          <mi mathvariant="normal">Ψ<!-- Ψ --></mi>
+          <mi>ψ<!-- ψ --></mi>
           <mi>c</mi>
         </msub>
         <mo stretchy="false">(</mo>
         <msub>
-          <mi>X</mi>
+          <mi>x</mi>
           <mi>c</mi>
         </msub>
         <mo stretchy="false">)</mo>
       </mrow>
     </mrow>
   </mrow>
-</mrow><annotation encoding="math/tex">p(X) = {\prod_c {\Psi_c(X_c)} \over Z}, Z = \sum_X {\prod_c {\Psi_c(X_c)}} \\
-p(X) = {1 \over Z} e^{ln \, {\prod_c {\Psi_c(X_c)}}} = {1 \over Z} e^{\sum_c {ln \, {\Psi_c(X_c)}}} \\
-p(X) = {1 \over Z} e^{-E(x)}, E(x) = {\sum_c {ln \, {\Psi_c(X_c)}}}</annotation></semantics></math></div><p class=""><br></p><p class=""><br></p><p class=""><br></p><p class=""><br></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+</mrow><annotation encoding="math/tex">P(x) = {\prod_c {\psi_c(x_c)} \over Z}, Z = \sum_x {\prod_c {\psi_c(x_c)}} \\
+P(x) = {1 \over e^{lnZ}} e^{ln \, {\prod_c {\psi_c(x_c)}}} = {1 \over e^{lnZ}} e^{\sum_c {ln \, {\psi_c(x_c)}}} \\
+P(x) = {1 \over e^{lnZ}} e^{-E(x)}, E(x) = {\sum_c {ln \, {\psi_c(x_c)}}}</annotation></semantics></math></div><p class=""><br></p><p class=""><br></p><p class=""><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
+<mstyle displaystyle="true">
+  <mo></mo>
+</mstyle>
+<annotation encoding="math/asciimath"></annotation></semantics></math> </p><p class=""><br></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mi>E</mi>
   <mo stretchy="false">(</mo>
   <mi>v</mi>

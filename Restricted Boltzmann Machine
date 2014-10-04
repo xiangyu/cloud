@@ -65,7 +65,7 @@
 </mrow><annotation encoding="math/tex">E(v,h) = - \sum_{i,j}{v_i w_{ij} h_j} - \sum_i{a_i v_i} - \sum_j{b_j v_j}</annotation></semantics></math></div><p class="">The probability distribution of a MRF:<br><br></p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mi>p</mi>
   <mo stretchy="false">(</mo>
-  <mi>x</mi>
+  <mi>X</mi>
   <mo stretchy="false">)</mo>
   <mo>=</mo>
   <mrow class="MJX-TeXAtom-ORD">
@@ -77,12 +77,12 @@
         </munder>
         <mrow class="MJX-TeXAtom-ORD">
           <msub>
-            <mi>ψ<!-- ψ --></mi>
+            <mi mathvariant="normal">Ψ<!-- Ψ --></mi>
             <mi>c</mi>
           </msub>
           <mo stretchy="false">(</mo>
           <msub>
-            <mi>x</mi>
+            <mi>X</mi>
             <mi>c</mi>
           </msub>
           <mo stretchy="false">)</mo>
@@ -91,12 +91,12 @@
       <mi>Z</mi>
     </mfrac>
   </mrow>
-  <mspace linebreak="newline"></mspace>
+  <mo>,</mo>
   <mi>Z</mi>
   <mo>=</mo>
   <munder>
     <mo>∑<!-- ∑ --></mo>
-    <mi>x</mi>
+    <mi>X</mi>
   </munder>
   <mrow class="MJX-TeXAtom-ORD">
     <munder>
@@ -105,12 +105,12 @@
     </munder>
     <mrow class="MJX-TeXAtom-ORD">
       <msub>
-        <mi>ψ<!-- ψ --></mi>
+        <mi mathvariant="normal">Ψ<!-- Ψ --></mi>
         <mi>c</mi>
       </msub>
       <mo stretchy="false">(</mo>
       <msub>
-        <mi>x</mi>
+        <mi>X</mi>
         <mi>c</mi>
       </msub>
       <mo stretchy="false">)</mo>
@@ -119,7 +119,7 @@
   <mspace linebreak="newline"></mspace>
   <mi>p</mi>
   <mo stretchy="false">(</mo>
-  <mi>x</mi>
+  <mi>X</mi>
   <mo stretchy="false">)</mo>
   <mo>=</mo>
   <mrow class="MJX-TeXAtom-ORD">
@@ -133,6 +133,7 @@
     <mrow class="MJX-TeXAtom-ORD">
       <mi>l</mi>
       <mi>n</mi>
+      <mspace width="thinmathspace"></mspace>
       <mrow class="MJX-TeXAtom-ORD">
         <munder>
           <mo>∏<!-- ∏ --></mo>
@@ -140,12 +141,12 @@
         </munder>
         <mrow class="MJX-TeXAtom-ORD">
           <msub>
-            <mi>ψ<!-- ψ --></mi>
+            <mi mathvariant="normal">Ψ<!-- Ψ --></mi>
             <mi>c</mi>
           </msub>
           <mo stretchy="false">(</mo>
           <msub>
-            <mi>x</mi>
+            <mi>X</mi>
             <mi>c</mi>
           </msub>
           <mo stretchy="false">)</mo>
@@ -170,14 +171,15 @@
       <mrow class="MJX-TeXAtom-ORD">
         <mi>l</mi>
         <mi>n</mi>
+        <mspace width="thinmathspace"></mspace>
         <mrow class="MJX-TeXAtom-ORD">
           <msub>
-            <mi>ψ<!-- ψ --></mi>
+            <mi mathvariant="normal">Ψ<!-- Ψ --></mi>
             <mi>c</mi>
           </msub>
           <mo stretchy="false">(</mo>
           <msub>
-            <mi>x</mi>
+            <mi>X</mi>
             <mi>c</mi>
           </msub>
           <mo stretchy="false">)</mo>
@@ -186,9 +188,8 @@
     </mrow>
   </msup>
   <mspace linebreak="newline"></mspace>
-</mrow><annotation encoding="math/tex">p(x) = {\prod_c {\psi_c(x_c)} \over Z} \\
-Z = \sum_x {\prod_c {\psi_c(x_c)}} \\
-p(x) = {1 \over Z} e^{ln{\prod_c {\psi_c(x_c)}}} = {1 \over Z} e^{\sum_c {ln{\psi_c(x_c)}}} \\</annotation></semantics></math></div><p class=""><br></p><p class=""><br></p><p class=""><br></p><p class=""><br></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+</mrow><annotation encoding="math/tex">p(X) = {\prod_c {\Psi_c(X_c)} \over Z}, Z = \sum_X {\prod_c {\Psi_c(X_c)}} \\
+p(X) = {1 \over Z} e^{ln \, {\prod_c {\Psi_c(X_c)}}} = {1 \over Z} e^{\sum_c {ln \, {\Psi_c(X_c)}}} \\</annotation></semantics></math></div><p class=""><br></p><p class=""><br></p><p class=""><br></p><p class=""><br></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mi>E</mi>
   <mo stretchy="false">(</mo>
   <mi>v</mi>

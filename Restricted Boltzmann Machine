@@ -95,33 +95,37 @@
   <mo>=</mo>
   <mrow class="MJX-TeXAtom-ORD">
     <mfrac>
-      <mrow>
-        <munder>
-          <mo>∏<!-- ∏ --></mo>
-          <mi>c</mi>
-        </munder>
-        <mrow class="MJX-TeXAtom-ORD">
-          <msub>
-            <mi>ψ<!-- ψ --></mi>
-            <mi>c</mi>
-          </msub>
-          <mo stretchy="false">(</mo>
-          <msub>
-            <mi>x</mi>
-            <mi>c</mi>
-          </msub>
-          <mo stretchy="false">)</mo>
-        </mrow>
-      </mrow>
+      <mn>1</mn>
       <mi>Z</mi>
     </mfrac>
+  </mrow>
+  <munder>
+    <mo>∏<!-- ∏ --></mo>
+    <mi>c</mi>
+  </munder>
+  <mrow class="MJX-TeXAtom-ORD">
+    <msub>
+      <mi>ψ<!-- ψ --></mi>
+      <mi>c</mi>
+    </msub>
+    <mo stretchy="false">(</mo>
+    <msub>
+      <mi>x</mi>
+      <mi>c</mi>
+    </msub>
+    <mo stretchy="false">)</mo>
   </mrow>
   <mo>,</mo>
   <mi>Z</mi>
   <mo>=</mo>
   <munder>
     <mo>∑<!-- ∑ --></mo>
-    <mi>x</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <msup>
+        <mi>x</mi>
+        <mo>′</mo>
+      </msup>
+    </mrow>
   </munder>
   <mrow class="MJX-TeXAtom-ORD">
     <munder>
@@ -135,7 +139,12 @@
       </msub>
       <mo stretchy="false">(</mo>
       <msub>
-        <mi>x</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msup>
+            <mi>x</mi>
+            <mo>′</mo>
+          </msup>
+        </mrow>
         <mi>c</mi>
       </msub>
       <mo stretchy="false">)</mo>
@@ -150,14 +159,7 @@
   <mrow class="MJX-TeXAtom-ORD">
     <mfrac>
       <mn>1</mn>
-      <msup>
-        <mi>e</mi>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mi>l</mi>
-          <mi>n</mi>
-          <mi>Z</mi>
-        </mrow>
-      </msup>
+      <mi>Z</mi>
     </mfrac>
   </mrow>
   <msup>
@@ -190,14 +192,7 @@
   <mrow class="MJX-TeXAtom-ORD">
     <mfrac>
       <mn>1</mn>
-      <msup>
-        <mi>e</mi>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mi>l</mi>
-          <mi>n</mi>
-          <mi>Z</mi>
-        </mrow>
-      </msup>
+      <mi>Z</mi>
     </mfrac>
   </mrow>
   <msup>
@@ -235,14 +230,7 @@
   <mrow class="MJX-TeXAtom-ORD">
     <mfrac>
       <mn>1</mn>
-      <msup>
-        <mi>e</mi>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mi>l</mi>
-          <mi>n</mi>
-          <mi>Z</mi>
-        </mrow>
-      </msup>
+      <mi>Z</mi>
     </mfrac>
   </mrow>
   <msup>
@@ -255,38 +243,77 @@
       <mo stretchy="false">)</mo>
     </mrow>
   </msup>
+  <mo>=</mo>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mfrac>
+      <msup>
+        <mi>e</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>−<!-- − --></mo>
+          <mi>E</mi>
+          <mo stretchy="false">(</mo>
+          <mi>x</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </msup>
+      <mrow>
+        <munder>
+          <mo>∑<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mi>x</mi>
+              <mo>′</mo>
+            </msup>
+          </mrow>
+        </munder>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>−<!-- − --></mo>
+            <mi>E</mi>
+            <mo stretchy="false">(</mo>
+            <msup>
+              <mi>x</mi>
+              <mo>′</mo>
+            </msup>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+      </mrow>
+    </mfrac>
+  </mrow>
   <mo>,</mo>
   <mi>E</mi>
   <mo stretchy="false">(</mo>
   <mi>x</mi>
   <mo stretchy="false">)</mo>
   <mo>=</mo>
+  <mo>−<!-- − --></mo>
+  <munder>
+    <mo>∑<!-- ∑ --></mo>
+    <mi>c</mi>
+  </munder>
   <mrow class="MJX-TeXAtom-ORD">
-    <munder>
-      <mo>∑<!-- ∑ --></mo>
-      <mi>c</mi>
-    </munder>
+    <mi>l</mi>
+    <mi>n</mi>
+    <mspace width="thinmathspace"></mspace>
     <mrow class="MJX-TeXAtom-ORD">
-      <mi>l</mi>
-      <mi>n</mi>
-      <mspace width="thinmathspace"></mspace>
-      <mrow class="MJX-TeXAtom-ORD">
-        <msub>
-          <mi>ψ<!-- ψ --></mi>
-          <mi>c</mi>
-        </msub>
-        <mo stretchy="false">(</mo>
-        <msub>
-          <mi>x</mi>
-          <mi>c</mi>
-        </msub>
-        <mo stretchy="false">)</mo>
-      </mrow>
+      <msub>
+        <mi>ψ<!-- ψ --></mi>
+        <mi>c</mi>
+      </msub>
+      <mo stretchy="false">(</mo>
+      <msub>
+        <mi>x</mi>
+        <mi>c</mi>
+      </msub>
+      <mo stretchy="false">)</mo>
     </mrow>
   </mrow>
-</mrow><annotation encoding="math/tex">P(x) = {\prod_c {\psi_c(x_c)} \over Z}, Z = \sum_x {\prod_c {\psi_c(x_c)}} \\
-P(x) = {1 \over e^{lnZ}} e^{ln \, {\prod_c {\psi_c(x_c)}}} = {1 \over e^{lnZ}} e^{\sum_c {ln \, {\psi_c(x_c)}}} \\
-P(x) = {1 \over e^{lnZ}} e^{-E(x)}, E(x) = {\sum_c {ln \, {\psi_c(x_c)}}}</annotation></semantics></math></div><p class=""><br></p><p class=""><br></p><p class=""><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
+  <mspace linebreak="newline"></mspace>
+</mrow><annotation encoding="math/tex">P(x) = {1 \over Z} \prod_c {\psi_c(x_c)}, Z = \sum_{x'} {\prod_c {\psi_c({x'}_c)}} \\
+P(x) = {1 \over Z} e^{ln \, {\prod_c {\psi_c(x_c)}}} = {1 \over Z} e^{\sum_c {ln \, {\psi_c(x_c)}}} \\
+P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\sum_c {ln \, {\psi_c(x_c)}} \\</annotation></semantics></math></div><p class=""><br></p><ul><li>http://www.quora.com/Deep-Learning/Why-is-the-energy-function-of-the-Restricted-Boltzmann-Machine-defined-the-way-it-is-defined </li></ul><p class=""><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
 <mstyle displaystyle="true">
   <mo></mo>
 </mstyle>
@@ -354,4 +381,4 @@ P(x) = {1 \over e^{lnZ}} e^{-E(x)}, E(x) = {\sum_c {ln \, {\psi_c(x_c)}}}</annot
       <mi>j</mi>
     </msub>
   </mrow>
-</mrow><annotation encoding="math/tex">E(v,h) = - \sum_{i,j}{v_i w_{ij} h_j} - \sum_i{a_i v_i} - \sum_j{b_j v_j}</annotation></semantics></math></div><h3>Hopfield Network</h3>
+</mrow><annotation encoding="math/tex">E(v,h) = - \sum_{i,j}{v_i w_{ij} h_j} - \sum_i{a_i v_i} - \sum_j{b_j v_j}</annotation></semantics></math></div><h3>Hopfield Network</h3><p><br></p><ul><li>http://www.neuralnetworksolutions.com/nn/unsupervised1.php </li></ul><p><br></p><h3>Blogs</h3><p><br></p><ul><li>http://theneural.wordpress.com/</li><li style="">http://karpathy.github.io/neuralnets/ <br></li></ul>

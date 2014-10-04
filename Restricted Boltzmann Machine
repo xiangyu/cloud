@@ -981,7 +981,103 @@ P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\
 \frac{\partial\log p(v)}{\partial w_{ij}}&amp;=\frac{\partial}{w_{ij}}(\log\sum_{h}e^{-E(v,h)})-\frac{\partial}{w_{ij}}(\log\sum_{v',h'}e^{-E(v',h')}) \\
 &amp;=-\frac{1}{\sum_{h'}e^{-E(v,h')}}\sum_{h}[e^{-E(v,h)}\frac{\partial E(v,h)}{\partial w_{ij}}]+\frac{1}{\sum_{v'',h''}e^{-E(v'',h'')}}\sum_{v',h'}[e^{-E(v',h')}\frac{\partial E(v',h')}{\partial w_{ij}}] \\
 &amp;=-\sum_{h}[p(h|v)\frac{\partial E(v,h)}{\partial w_{ij}}]+\sum_{v',h'}[p(v',h')\frac{\partial E(v',h')}{\partial w_{ij}}]
-}</annotation></semantics></math></div><p class=""><br></p><p class="">Energy of a configuration (v,h) of RBM:<br></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+}</annotation></semantics></math></div><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+  <mfrac>
+    <mrow>
+      <mi mathvariant="normal">∂<!-- ∂ --></mi>
+      <mi>log</mi>
+      <mo>⁡<!-- ⁡ --></mo>
+      <mi>p</mi>
+      <mo stretchy="false">(</mo>
+      <mi>v</mi>
+      <mo stretchy="false">)</mo>
+    </mrow>
+    <mrow>
+      <mi mathvariant="normal">∂<!-- ∂ --></mi>
+      <msub>
+        <mi>w</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>i</mi>
+          <mi>j</mi>
+        </mrow>
+      </msub>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mo>−<!-- − --></mo>
+  <munder>
+    <mo>∑<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>h</mi>
+    </mrow>
+  </munder>
+  <mo stretchy="false">[</mo>
+  <mi>p</mi>
+  <mo stretchy="false">(</mo>
+  <mi>h</mi>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mo stretchy="false">|</mo>
+  </mrow>
+  <mi>v</mi>
+  <mo stretchy="false">)</mo>
+  <msub>
+    <mi>v</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>i</mi>
+    </mrow>
+  </msub>
+  <msub>
+    <mi>h</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>j</mi>
+    </mrow>
+  </msub>
+  <mo stretchy="false">]</mo>
+  <mo>+</mo>
+  <munder>
+    <mo>∑<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <msup>
+        <mi>v</mi>
+        <mo>′</mo>
+      </msup>
+      <mo>,</mo>
+      <msup>
+        <mi>h</mi>
+        <mo>′</mo>
+      </msup>
+    </mrow>
+  </munder>
+  <mo stretchy="false">[</mo>
+  <mi>p</mi>
+  <mo stretchy="false">(</mo>
+  <msup>
+    <mi>v</mi>
+    <mo>′</mo>
+  </msup>
+  <mo>,</mo>
+  <msup>
+    <mi>h</mi>
+    <mo>′</mo>
+  </msup>
+  <mo stretchy="false">)</mo>
+  <msubsup>
+    <mi>v</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>i</mi>
+    </mrow>
+    <mo>′</mo>
+  </msubsup>
+  <msubsup>
+    <mi>h</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>j</mi>
+    </mrow>
+    <mo>′</mo>
+  </msubsup>
+  <mo stretchy="false">]</mo>
+</mrow><annotation encoding="math/tex">\frac{\partial\log p(v)}{\partial w_{ij}}=-\sum_{h}[p(h|v)v_{i}h_{j}]+\sum_{v',h'}[p(v',h')v_{i}'h_{j}']
+ </annotation></semantics></math></div><p class=""><br></p><p class="">Energy of a configuration (v,h) of RBM:<br></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mi>E</mi>
   <mo stretchy="false">(</mo>
   <mi>v</mi>
@@ -1785,4 +1881,4 @@ e^{-E(v, h)} &amp;= e^{\sum_j [{(b_j + \sum_i {{v_i w_{ij}} }}) h_j]} e^{\sum_i{
     </mrow>
   </msup>
   <mo stretchy="false">)</mo>
-</mrow><annotation encoding="math/tex">p(v)=\frac{1}{Z}\sum_{h}e^{-E(v,h)}=\frac{1}{Z}\prod_{i}e^{a_{i}v_{i}}\prod_{j}(1+e^{b_{j}+\sum_{i}v_{i}w_{ij}})</annotation></semantics></math></div><p class="" style=""><br></p><p class="" style="">xx</p><p class=""></p><p class=""></p><p class=""></p><p class=""><br></p><p class="">Let</p><p class=""></p><p class=""><br></p><p class="">xx</p><p class=""></p><p class=""><br></p><p class="">xx</p><h3 style="">Hopfield Network</h3><p><br></p><ul><li>http://www.neuralnetworksolutions.com/nn/unsupervised1.php</li></ul><p><br></p><h3 style="">Energy-Based Models&nbsp;</h3><p><br></p><ul><li>http://deeplearning.net/tutorial/rbm.html</li><li style="">http://www.quora.com/Deep-Learning/Why-is-the-energy-function-of-the-Restricted-Boltzmann-Machine-defined-the-way-it-is-defined<br>&nbsp;<br style=""></li></ul><p><br></p><h3>Articles</h3><p><br></p><ul><li>Training Restricted Boltzmann Machines: An Introduction. Asja Fischer and Christian Igel</li></ul><p class=""><br></p><p><br> </p><h3>Blogs</h3><p><br></p><ul><li>http://theneural.wordpress.com/</li><li style="">http://karpathy.github.io/neuralnets/ <br></li></ul>
+</mrow><annotation encoding="math/tex">p(v)=\frac{1}{Z}\sum_{h}e^{-E(v,h)}=\frac{1}{Z}\prod_{i}e^{a_{i}v_{i}}\prod_{j}(1+e^{b_{j}+\sum_{i}v_{i}w_{ij}})</annotation></semantics></math></div><p class="" style=""><br></p><p class="" style=""><br></p><p class=""><br></p><p class="">--</p><h3 style="">Hopfield Network</h3><p><br></p><ul><li>http://www.neuralnetworksolutions.com/nn/unsupervised1.php</li></ul><p><br></p><h3 style="">Energy-Based Models&nbsp;</h3><p><br></p><ul><li>http://deeplearning.net/tutorial/rbm.html</li><li style="">http://www.quora.com/Deep-Learning/Why-is-the-energy-function-of-the-Restricted-Boltzmann-Machine-defined-the-way-it-is-defined<br>&nbsp;<br style=""></li></ul><p><br></p><h3>Articles</h3><p><br></p><ul><li>Training Restricted Boltzmann Machines: An Introduction. Asja Fischer and Christian Igel</li></ul><p class=""><br></p><p><br> </p><h3>Blogs</h3><p><br></p><ul><li>http://theneural.wordpress.com/</li><li style="">http://karpathy.github.io/neuralnets/ <br></li></ul>

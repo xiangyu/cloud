@@ -319,7 +319,7 @@ P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\
       <mi>j</mi>
     </msub>
   </mrow>
-</mrow><annotation encoding="math/tex">E(v,h) = - \sum_j {\sum_i {v_i w_{ij} h_j}} - \sum_i{a_i v_i} - \sum_j{b_j h_j}</annotation></semantics></math></div><p class="">with&nbsp;</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+  <mspace linebreak="newline"></mspace>
   <mi>E</mi>
   <mo stretchy="false">(</mo>
   <mi>v</mi>
@@ -446,6 +446,10 @@ P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\
     </msub>
   </mrow>
   <mspace linebreak="newline"></mspace>
+</mrow><annotation encoding="math/tex">E(v,h) = - \sum_j {\sum_i {v_i w_{ij} h_j}} - \sum_i{a_i v_i} - \sum_j{b_j h_j} \\
+E(v,h) = - \sum_j [{\sum_i {v_i w_{ij} h_j} + {b_j h_j}}] - \sum_i{a_i v_i} \\
+E(v,h) = - \sum_j [{(\sum_i {{v_i w_{ij}} + b_j}}) h_j] - \sum_i{a_i v_i} \\
+</annotation></semantics></math></div><p class="">with&nbsp;</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <msup>
     <mi>e</mi>
     <mrow class="MJX-TeXAtom-ORD">
@@ -521,95 +525,7 @@ P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\
       </mrow>
     </mrow>
   </msup>
-</mrow><annotation encoding="math/tex">E(v,h) = - \sum_j [{\sum_i {v_i w_{ij} h_j} + {b_j h_j}}] - \sum_i{a_i v_i} \\
-E(v,h) = - \sum_j [{(\sum_i {{v_i w_{ij}} + b_j}}) h_j] - \sum_i{a_i v_i} \\
-e^{-E(v, h)} = e^{\sum_j [{(\sum_i {{v_i w_{ij}} + b_j}}) h_j]} e^{\sum_i{a_i v_i}}</annotation></semantics></math></div><p class="">xx</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
-  <munder>
-    <mo>∑<!-- ∑ --></mo>
-    <mi>h</mi>
-  </munder>
-  <mrow class="MJX-TeXAtom-ORD">
-    <msup>
-      <mi>e</mi>
-      <mrow class="MJX-TeXAtom-ORD">
-        <munder>
-          <mo>∑<!-- ∑ --></mo>
-          <mi>j</mi>
-        </munder>
-        <mrow class="MJX-TeXAtom-ORD">
-          <msub>
-            <mi>h</mi>
-            <mi>j</mi>
-          </msub>
-        </mrow>
-      </mrow>
-    </msup>
-  </mrow>
-  <mo>=</mo>
-  <munder>
-    <mo>∑<!-- ∑ --></mo>
-    <mi>h</mi>
-  </munder>
-  <mrow class="MJX-TeXAtom-ORD">
-    <munder>
-      <mo>∏<!-- ∏ --></mo>
-      <mi>j</mi>
-    </munder>
-    <msup>
-      <mi>e</mi>
-      <mrow class="MJX-TeXAtom-ORD">
-        <msub>
-          <mi>h</mi>
-          <mi>j</mi>
-        </msub>
-      </mrow>
-    </msup>
-  </mrow>
-  <mo>=</mo>
-  <munder>
-    <mo>∑<!-- ∑ --></mo>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mi>h</mi>
-      <mn>1</mn>
-    </mrow>
-  </munder>
-  <munder>
-    <mo>∑<!-- ∑ --></mo>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mi>h</mi>
-      <mn>2</mn>
-    </mrow>
-  </munder>
-  <mo>.</mo>
-  <mo>.</mo>
-  <mo>.</mo>
-  <munder>
-    <mo>∑<!-- ∑ --></mo>
-    <mrow class="MJX-TeXAtom-ORD">
-      <msub>
-        <mi>h</mi>
-        <mi>j</mi>
-      </msub>
-    </mrow>
-  </munder>
-  <mrow class="MJX-TeXAtom-ORD">
-    <munder>
-      <mo>∏<!-- ∏ --></mo>
-      <mi>j</mi>
-    </munder>
-    <mrow class="MJX-TeXAtom-ORD">
-      <msup>
-        <mi>e</mi>
-        <mrow class="MJX-TeXAtom-ORD">
-          <msub>
-            <mi>h</mi>
-            <mi>j</mi>
-          </msub>
-        </mrow>
-      </msup>
-    </mrow>
-  </mrow>
-</mrow><annotation encoding="math/tex">\sum_h {e^{\sum_j {h_j}}} = \sum_h {\prod_j e^{h_j}} = \sum_{h1} \sum_{h2}... \sum_{h_j} {\prod_j {e^{h_j}} }</annotation></semantics></math></div><p class=""><br></p><p class="">xx</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+</mrow><annotation encoding="math/tex">e^{-E(v, h)} = e^{\sum_j [{(\sum_i {{v_i w_{ij}} + b_j}}) h_j]} e^{\sum_i{a_i v_i}}</annotation></semantics></math></div><p class="">xx</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><annotation encoding="math/tex"></annotation></semantics></math></div><p class=""><br></p><p class="">xx</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mi>p</mi>
   <mo stretchy="false">(</mo>
   <mi>v</mi>

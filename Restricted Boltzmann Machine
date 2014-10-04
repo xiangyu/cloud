@@ -1,4 +1,194 @@
-<p class="">Energy of a configuration (v,h):</p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+<p class="">Training Restricted Boltzmann Machines: An Introduction, Asja Fischer and Christian Igel</p><p class=""><br> </p><p class="">Energy of a configuration (v,h):</p><p class=""><br></p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+  <mi>E</mi>
+  <mo stretchy="false">(</mo>
+  <mi>v</mi>
+  <mo>,</mo>
+  <mi>h</mi>
+  <mo stretchy="false">)</mo>
+  <mo>=</mo>
+  <mo>−<!-- − --></mo>
+  <munder>
+    <mo>∑<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>i</mi>
+      <mo>,</mo>
+      <mi>j</mi>
+    </mrow>
+  </munder>
+  <mrow class="MJX-TeXAtom-ORD">
+    <msub>
+      <mi>v</mi>
+      <mi>i</mi>
+    </msub>
+    <msub>
+      <mi>w</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi>i</mi>
+        <mi>j</mi>
+      </mrow>
+    </msub>
+    <msub>
+      <mi>h</mi>
+      <mi>j</mi>
+    </msub>
+  </mrow>
+  <mo>−<!-- − --></mo>
+  <munder>
+    <mo>∑<!-- ∑ --></mo>
+    <mi>i</mi>
+  </munder>
+  <mrow class="MJX-TeXAtom-ORD">
+    <msub>
+      <mi>a</mi>
+      <mi>i</mi>
+    </msub>
+    <msub>
+      <mi>v</mi>
+      <mi>i</mi>
+    </msub>
+  </mrow>
+  <mo>−<!-- − --></mo>
+  <munder>
+    <mo>∑<!-- ∑ --></mo>
+    <mi>j</mi>
+  </munder>
+  <mrow class="MJX-TeXAtom-ORD">
+    <msub>
+      <mi>b</mi>
+      <mi>j</mi>
+    </msub>
+    <msub>
+      <mi>v</mi>
+      <mi>j</mi>
+    </msub>
+  </mrow>
+</mrow><annotation encoding="math/tex">E(v,h) = - \sum_{i,j}{v_i w_{ij} h_j} - \sum_i{a_i v_i} - \sum_j{b_j v_j}</annotation></semantics></math></div><p class="">The probability distribution of a MRF:<br><br></p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+  <mi>p</mi>
+  <mo stretchy="false">(</mo>
+  <mi>x</mi>
+  <mo stretchy="false">)</mo>
+  <mo>=</mo>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mfrac>
+      <mrow>
+        <munder>
+          <mo>∏<!-- ∏ --></mo>
+          <mi>c</mi>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>ψ<!-- ψ --></mi>
+            <mi>c</mi>
+          </msub>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>x</mi>
+            <mi>c</mi>
+          </msub>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+      <mi>Z</mi>
+    </mfrac>
+  </mrow>
+  <mspace linebreak="newline"></mspace>
+  <mi>Z</mi>
+  <mo>=</mo>
+  <munder>
+    <mo>∑<!-- ∑ --></mo>
+    <mi>x</mi>
+  </munder>
+  <mrow class="MJX-TeXAtom-ORD">
+    <munder>
+      <mo>∏<!-- ∏ --></mo>
+      <mi>c</mi>
+    </munder>
+    <mrow class="MJX-TeXAtom-ORD">
+      <msub>
+        <mi>ψ<!-- ψ --></mi>
+        <mi>c</mi>
+      </msub>
+      <mo stretchy="false">(</mo>
+      <msub>
+        <mi>x</mi>
+        <mi>c</mi>
+      </msub>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mrow>
+  <mspace linebreak="newline"></mspace>
+  <mi>p</mi>
+  <mo stretchy="false">(</mo>
+  <mi>x</mi>
+  <mo stretchy="false">)</mo>
+  <mo>=</mo>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mfrac>
+      <mn>1</mn>
+      <mi>Z</mi>
+    </mfrac>
+  </mrow>
+  <msup>
+    <mi>e</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>l</mi>
+      <mi>n</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <munder>
+          <mo>∏<!-- ∏ --></mo>
+          <mi>c</mi>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>ψ<!-- ψ --></mi>
+            <mi>c</mi>
+          </msub>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>x</mi>
+            <mi>c</mi>
+          </msub>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+    </mrow>
+  </msup>
+  <mo>=</mo>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mfrac>
+      <mn>1</mn>
+      <mi>Z</mi>
+    </mfrac>
+  </mrow>
+  <msup>
+    <mi>e</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <munder>
+        <mo>∑<!-- ∑ --></mo>
+        <mi>c</mi>
+      </munder>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi>l</mi>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>ψ<!-- ψ --></mi>
+            <mi>c</mi>
+          </msub>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>x</mi>
+            <mi>c</mi>
+          </msub>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+    </mrow>
+  </msup>
+  <mspace linebreak="newline"></mspace>
+</mrow><annotation encoding="math/tex">p(x) = {\prod_c {\psi_c(x_c)} \over Z} \\
+Z = \sum_x {\prod_c {\psi_c(x_c)}} \\
+p(x) = {1 \over Z} e^{ln{\prod_c {\psi_c(x_c)}}} = {1 \over Z} e^{\sum_c {ln{\psi_c(x_c)}}} \\</annotation></semantics></math></div><p class=""><br></p><p class=""><br></p><p class=""><br></p><p class=""><br></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mi>E</mi>
   <mo stretchy="false">(</mo>
   <mi>v</mi>

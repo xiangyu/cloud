@@ -923,7 +923,44 @@ e^{-E(v, h)} &amp;= e^{\sum_j [{(\sum_i {{v_i w_{ij}} + b_j}}) h_j]} e^{\sum_i{a
 &amp;= \sum_{h_1} {e^{h_1}} \sum_{h_2} {e^{h_2}} ...  \sum_{h_j} {e^{h_j}} \\
 &amp;= \prod_j \sum_{h_j} {e^{h_j}} \\
 \sum_h {e^{-E(v, h)}} &amp;= e^{\sum_i{a_i v_i}} \prod_j \sum_{h_j} {e^{{(\sum_i {{v_i w_{ij}} + b_j}}) h_j}}
-}</annotation></semantics></math></div><p class="" style="">xx</p><p class="" style="">xx</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+}</annotation></semantics></math></div><p class="" style="">Since <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
+<mstyle displaystyle="true">
+  <msub>
+    <mi>h</mi>
+    <mi>j</mi>
+  </msub>
+</mstyle>
+<annotation encoding="math/asciimath">h_j</annotation></semantics></math> is a binary unit,</p><p class="" style=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+  <munder>
+    <mo>∑<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <msub>
+        <mi>h</mi>
+        <mi>j</mi>
+      </msub>
+    </mrow>
+  </munder>
+  <msub>
+    <mi>h</mi>
+    <mi>j</mi>
+  </msub>
+  <mo>=</mo>
+  <msub>
+    <mi>h</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>+</mo>
+  <msub>
+    <mi>h</mi>
+    <mn>2</mn>
+  </msub>
+  <mo>=</mo>
+  <mn>0</mn>
+  <mo>+</mo>
+  <mn>1</mn>
+  <mo>=</mo>
+  <mn>1</mn>
+</mrow><annotation encoding="math/tex">\sum_{h_j} h_j = h_1 + h_2 = 0 + 1 = 1</annotation></semantics></math></div><p class="" style=""><br></p><p class="" style="">xx</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mi>p</mi>
   <mo stretchy="false">(</mo>
   <mi>v</mi>
@@ -995,8 +1032,50 @@ e^{-E(v, h)} &amp;= e^{\sum_j [{(\sum_i {{v_i w_{ij}} + b_j}}) h_j]} e^{\sum_i{a
       </msub>
     </mrow>
   </msup>
+  <munder>
+    <mo>∏<!-- ∏ --></mo>
+    <mi>j</mi>
+  </munder>
+  <mo stretchy="false">(</mo>
+  <msup>
+    <mi>e</mi>
+    <mn>0</mn>
+  </msup>
+  <mo>+</mo>
+  <mrow class="MJX-TeXAtom-ORD">
+    <msup>
+      <mi>e</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <munder>
+          <mo>∑<!-- ∑ --></mo>
+          <mi>i</mi>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>v</mi>
+              <mi>i</mi>
+            </msub>
+            <msub>
+              <mi>w</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+                <mi>j</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>+</mo>
+          <msub>
+            <mi>b</mi>
+            <mi>j</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </msup>
+  </mrow>
+  <mo stretchy="false">)</mo>
 </mrow><annotation encoding="math/tex">p(v) = \sum_h {p(v, h)} = {1 \over Z} \sum_h {e^{-E(v, h)}} \\
-p(v) = {1 \over Z} \prod_i e^{a_i v_i}</annotation></semantics></math></div><p class=""></p><p class=""></p><p class=""><br></p><p class="">xx</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+p(v) = {1 \over Z} \prod_i e^{a_i v_i} \prod_j (e^0 + {e^{\sum_i {{v_i w_{ij}} + b_j}}})</annotation></semantics></math></div><p class=""></p><p class=""></p><p class=""><br></p><p class="">xx</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mrow class="MJX-TeXAtom-ORD">
     <mfrac>
       <mrow>

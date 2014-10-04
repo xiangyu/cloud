@@ -249,203 +249,7 @@
   <mspace linebreak="newline"></mspace>
 </mrow><annotation encoding="math/tex">P(x) = {1 \over Z} \prod_c {\psi_c(x_c)}, Z = \sum_{x'} {\prod_c {\psi_c({x'}_c)}} \\
 P(x) = {1 \over Z} e^{ln \, {\prod_c {\psi_c(x_c)}}} = {1 \over Z} e^{\sum_c {ln \, {\psi_c(x_c)}}} \\
-P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\sum_c {ln \, {\psi_c(x_c)}} \\</annotation></semantics></math></div><p class="">Energy of a configuration (v,h) of RBM:</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
-  <mi>E</mi>
-  <mo stretchy="false">(</mo>
-  <mi>v</mi>
-  <mo>,</mo>
-  <mi>h</mi>
-  <mo stretchy="false">)</mo>
-  <mo>=</mo>
-  <mo>−<!-- − --></mo>
-  <munder>
-    <mo>∑<!-- ∑ --></mo>
-    <mi>j</mi>
-  </munder>
-  <mrow class="MJX-TeXAtom-ORD">
-    <munder>
-      <mo>∑<!-- ∑ --></mo>
-      <mi>i</mi>
-    </munder>
-    <mrow class="MJX-TeXAtom-ORD">
-      <msub>
-        <mi>v</mi>
-        <mi>i</mi>
-      </msub>
-      <msub>
-        <mi>w</mi>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mi>i</mi>
-          <mi>j</mi>
-        </mrow>
-      </msub>
-      <msub>
-        <mi>h</mi>
-        <mi>j</mi>
-      </msub>
-    </mrow>
-  </mrow>
-  <mo>−<!-- − --></mo>
-  <munder>
-    <mo>∑<!-- ∑ --></mo>
-    <mi>i</mi>
-  </munder>
-  <mrow class="MJX-TeXAtom-ORD">
-    <msub>
-      <mi>a</mi>
-      <mi>i</mi>
-    </msub>
-    <msub>
-      <mi>v</mi>
-      <mi>i</mi>
-    </msub>
-  </mrow>
-  <mo>−<!-- − --></mo>
-  <munder>
-    <mo>∑<!-- ∑ --></mo>
-    <mi>j</mi>
-  </munder>
-  <mrow class="MJX-TeXAtom-ORD">
-    <msub>
-      <mi>b</mi>
-      <mi>j</mi>
-    </msub>
-    <msub>
-      <mi>h</mi>
-      <mi>j</mi>
-    </msub>
-  </mrow>
-  <mspace linebreak="newline"></mspace>
-  <mi>E</mi>
-  <mo stretchy="false">(</mo>
-  <mi>v</mi>
-  <mo>,</mo>
-  <mi>h</mi>
-  <mo stretchy="false">)</mo>
-  <mo>=</mo>
-  <mo>−<!-- − --></mo>
-  <munder>
-    <mo>∑<!-- ∑ --></mo>
-    <mi>j</mi>
-  </munder>
-  <mo stretchy="false">[</mo>
-  <mrow class="MJX-TeXAtom-ORD">
-    <munder>
-      <mo>∑<!-- ∑ --></mo>
-      <mi>i</mi>
-    </munder>
-    <mrow class="MJX-TeXAtom-ORD">
-      <msub>
-        <mi>v</mi>
-        <mi>i</mi>
-      </msub>
-      <msub>
-        <mi>w</mi>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mi>i</mi>
-          <mi>j</mi>
-        </mrow>
-      </msub>
-      <msub>
-        <mi>h</mi>
-        <mi>j</mi>
-      </msub>
-    </mrow>
-    <mo>+</mo>
-    <mrow class="MJX-TeXAtom-ORD">
-      <msub>
-        <mi>b</mi>
-        <mi>j</mi>
-      </msub>
-      <msub>
-        <mi>h</mi>
-        <mi>j</mi>
-      </msub>
-    </mrow>
-  </mrow>
-  <mo stretchy="false">]</mo>
-  <mo>−<!-- − --></mo>
-  <munder>
-    <mo>∑<!-- ∑ --></mo>
-    <mi>i</mi>
-  </munder>
-  <mrow class="MJX-TeXAtom-ORD">
-    <msub>
-      <mi>a</mi>
-      <mi>i</mi>
-    </msub>
-    <msub>
-      <mi>v</mi>
-      <mi>i</mi>
-    </msub>
-  </mrow>
-  <mspace linebreak="newline"></mspace>
-  <mi>E</mi>
-  <mo stretchy="false">(</mo>
-  <mi>v</mi>
-  <mo>,</mo>
-  <mi>h</mi>
-  <mo stretchy="false">)</mo>
-  <mo>=</mo>
-  <mo>−<!-- − --></mo>
-  <munder>
-    <mo>∑<!-- ∑ --></mo>
-    <mi>j</mi>
-  </munder>
-  <mo stretchy="false">[</mo>
-  <mrow class="MJX-TeXAtom-ORD">
-    <mo stretchy="false">(</mo>
-    <munder>
-      <mo>∑<!-- ∑ --></mo>
-      <mi>i</mi>
-    </munder>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mrow class="MJX-TeXAtom-ORD">
-        <msub>
-          <mi>v</mi>
-          <mi>i</mi>
-        </msub>
-        <msub>
-          <mi>w</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>i</mi>
-            <mi>j</mi>
-          </mrow>
-        </msub>
-      </mrow>
-      <mo>+</mo>
-      <msub>
-        <mi>b</mi>
-        <mi>j</mi>
-      </msub>
-    </mrow>
-  </mrow>
-  <mo stretchy="false">)</mo>
-  <msub>
-    <mi>h</mi>
-    <mi>j</mi>
-  </msub>
-  <mo stretchy="false">]</mo>
-  <mo>−<!-- − --></mo>
-  <munder>
-    <mo>∑<!-- ∑ --></mo>
-    <mi>i</mi>
-  </munder>
-  <mrow class="MJX-TeXAtom-ORD">
-    <msub>
-      <mi>a</mi>
-      <mi>i</mi>
-    </msub>
-    <msub>
-      <mi>v</mi>
-      <mi>i</mi>
-    </msub>
-  </mrow>
-  <mspace linebreak="newline"></mspace>
-</mrow><annotation encoding="math/tex">E(v,h) = - \sum_j {\sum_i {v_i w_{ij} h_j}} - \sum_i{a_i v_i} - \sum_j{b_j h_j} \\
-E(v,h) = - \sum_j [{\sum_i {v_i w_{ij} h_j} + {b_j h_j}}] - \sum_i{a_i v_i} \\
-E(v,h) = - \sum_j [{(\sum_i {{v_i w_{ij}} + b_j}}) h_j] - \sum_i{a_i v_i} \\
-</annotation></semantics></math></div><p class="">We have:</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\sum_c {ln \, {\psi_c(x_c)}} \\</annotation></semantics></math></div><p class="" style="">We have:</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mi>p</mi>
   <mo stretchy="false">(</mo>
   <mi>v</mi>
@@ -1177,7 +981,7 @@ E(v,h) = - \sum_j [{(\sum_i {{v_i w_{ij}} + b_j}}) h_j] - \sum_i{a_i v_i} \\
 \frac{\partial\log p(v)}{\partial w_{ij}}&amp;=\frac{\partial}{w_{ij}}(\log\sum_{h}e^{-E(v,h)})-\frac{\partial}{w_{ij}}(\log\sum_{v',h'}e^{-E(v',h')}) \\
 &amp;=-\frac{1}{\sum_{h'}e^{-E(v,h')}}\sum_{h}[e^{-E(v,h)}\frac{\partial E(v,h)}{\partial w_{ij}}]+\frac{1}{\sum_{v'',h''}e^{-E(v'',h'')}}\sum_{v',h'}[e^{-E(v',h')}\frac{\partial E(v',h')}{\partial w_{ij}}] \\
 &amp;=-\sum_{h}[p(h|v)\frac{\partial E(v,h)}{\partial w_{ij}}]+\sum_{v',h'}[p(v',h')\frac{\partial E(v',h')}{\partial w_{ij}}]
-}</annotation></semantics></math></div><p class=""><br></p><p class="">with&nbsp;</p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+}</annotation></semantics></math></div><p class=""><br></p><p class="">Energy of a configuration (v,h) of RBM:<br></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mi>E</mi>
   <mo stretchy="false">(</mo>
   <mi>v</mi>
@@ -1854,7 +1658,7 @@ e^{-E(v, h)} &amp;= e^{\sum_j [{(b_j + \sum_i {{v_i w_{ij}} }}) h_j]} e^{\sum_i{
     <mi>j</mi>
   </msub>
 </mstyle>
-<annotation encoding="math/asciimath">h_j</annotation></semantics></math> is a binary unit,</p><p class="" style=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+<annotation encoding="math/asciimath">h_j</annotation></semantics></math> is a binary unit,&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <munder>
     <mo>∑<!-- ∑ --></mo>
     <mrow class="MJX-TeXAtom-ORD">
@@ -1884,4 +1688,101 @@ e^{-E(v, h)} &amp;= e^{\sum_j [{(b_j + \sum_i {{v_i w_{ij}} }}) h_j]} e^{\sum_i{
   <mn>1</mn>
   <mo>=</mo>
   <mn>1</mn>
-</mrow><annotation encoding="math/tex">\sum_{h_j} h_j = h_1 + h_2 = 0 + 1 = 1</annotation></semantics></math></div><p class="" style=""><br></p><p class="" style="">xx</p><p class=""></p><p class=""></p><p class=""></p><p class=""><br></p><p class="">Let</p><p class=""></p><p class=""><br></p><p class="">xx</p><p class=""></p><p class=""><br></p><p class="">xx</p><h3 style="">Hopfield Network</h3><p><br></p><ul><li>http://www.neuralnetworksolutions.com/nn/unsupervised1.php</li></ul><p><br></p><h3 style="">Energy-Based Models&nbsp;</h3><p><br></p><ul><li>http://deeplearning.net/tutorial/rbm.html</li><li style="">http://www.quora.com/Deep-Learning/Why-is-the-energy-function-of-the-Restricted-Boltzmann-Machine-defined-the-way-it-is-defined<br>&nbsp;<br style=""></li></ul><p><br></p><h3>Articles</h3><p><br></p><ul><li>Training Restricted Boltzmann Machines: An Introduction. Asja Fischer and Christian Igel</li></ul><p class=""><br></p><p><br> </p><h3>Blogs</h3><p><br></p><ul><li>http://theneural.wordpress.com/</li><li style="">http://karpathy.github.io/neuralnets/ <br></li></ul>
+</mrow><annotation encoding="math/tex">\sum_{h_j} h_j = h_1 + h_2 = 0 + 1 = 1</annotation></semantics></math>, we get:</p><p class="" style=""></p><p class="" style=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+  <mi>p</mi>
+  <mo stretchy="false">(</mo>
+  <mi>v</mi>
+  <mo stretchy="false">)</mo>
+  <mo>=</mo>
+  <mfrac>
+    <mn>1</mn>
+    <mi>Z</mi>
+  </mfrac>
+  <munder>
+    <mo>∑<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>h</mi>
+    </mrow>
+  </munder>
+  <msup>
+    <mi>e</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>−<!-- − --></mo>
+      <mi>E</mi>
+      <mo stretchy="false">(</mo>
+      <mi>v</mi>
+      <mo>,</mo>
+      <mi>h</mi>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </msup>
+  <mo>=</mo>
+  <mfrac>
+    <mn>1</mn>
+    <mi>Z</mi>
+  </mfrac>
+  <munder>
+    <mo>∏<!-- ∏ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>i</mi>
+    </mrow>
+  </munder>
+  <msup>
+    <mi>e</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <msub>
+        <mi>a</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>i</mi>
+        </mrow>
+      </msub>
+      <msub>
+        <mi>v</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>i</mi>
+        </mrow>
+      </msub>
+    </mrow>
+  </msup>
+  <munder>
+    <mo>∏<!-- ∏ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>j</mi>
+    </mrow>
+  </munder>
+  <mo stretchy="false">(</mo>
+  <mn>1</mn>
+  <mo>+</mo>
+  <msup>
+    <mi>e</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <msub>
+        <mi>b</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>j</mi>
+        </mrow>
+      </msub>
+      <mo>+</mo>
+      <munder>
+        <mo>∑<!-- ∑ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>i</mi>
+        </mrow>
+      </munder>
+      <msub>
+        <mi>v</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>i</mi>
+        </mrow>
+      </msub>
+      <msub>
+        <mi>w</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>i</mi>
+          <mi>j</mi>
+        </mrow>
+      </msub>
+    </mrow>
+  </msup>
+  <mo stretchy="false">)</mo>
+</mrow><annotation encoding="math/tex">p(v)=\frac{1}{Z}\sum_{h}e^{-E(v,h)}=\frac{1}{Z}\prod_{i}e^{a_{i}v_{i}}\prod_{j}(1+e^{b_{j}+\sum_{i}v_{i}w_{ij}})</annotation></semantics></math></div><p class="" style=""><br></p><p class="" style="">xx</p><p class=""></p><p class=""></p><p class=""></p><p class=""><br></p><p class="">Let</p><p class=""></p><p class=""><br></p><p class="">xx</p><p class=""></p><p class=""><br></p><p class="">xx</p><h3 style="">Hopfield Network</h3><p><br></p><ul><li>http://www.neuralnetworksolutions.com/nn/unsupervised1.php</li></ul><p><br></p><h3 style="">Energy-Based Models&nbsp;</h3><p><br></p><ul><li>http://deeplearning.net/tutorial/rbm.html</li><li style="">http://www.quora.com/Deep-Learning/Why-is-the-energy-function-of-the-Restricted-Boltzmann-Machine-defined-the-way-it-is-defined<br>&nbsp;<br style=""></li></ul><p><br></p><h3>Articles</h3><p><br></p><ul><li>Training Restricted Boltzmann Machines: An Introduction. Asja Fischer and Christian Igel</li></ul><p class=""><br></p><p><br> </p><h3>Blogs</h3><p><br></p><ul><li>http://theneural.wordpress.com/</li><li style="">http://karpathy.github.io/neuralnets/ <br></li></ul>

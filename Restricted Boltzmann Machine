@@ -585,6 +585,50 @@ E(v,h) = - \sum_j [{(\sum_i {{v_i w_{ij}} + b_j}}) h_j] - \sum_i{a_i v_i} \\
             <mi>h</mi>
             <mn>1</mn>
           </msub>
+          <mo>,</mo>
+          <msub>
+            <mi>h</mi>
+            <mn>2</mn>
+          </msub>
+          <mo>,</mo>
+          <mo>.</mo>
+          <mo>.</mo>
+          <mo>.</mo>
+          <mo>,</mo>
+          <msub>
+            <mi>h</mi>
+            <mi>j</mi>
+          </msub>
+        </mrow>
+      </munder>
+      <mrow class="MJX-TeXAtom-ORD">
+        <munder>
+          <mo>∏<!-- ∏ --></mo>
+          <mi>j</mi>
+        </munder>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>h</mi>
+              <mi>j</mi>
+            </msub>
+          </mrow>
+        </msup>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd></mtd>
+    <mtd>
+      <mo>=</mo>
+      <munder>
+        <mo>∑<!-- ∑ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>h</mi>
+            <mn>1</mn>
+          </msub>
         </mrow>
       </munder>
       <munder>
@@ -697,7 +741,8 @@ E(v,h) = - \sum_j [{(\sum_i {{v_i w_{ij}} + b_j}}) h_j] - \sum_i{a_i v_i} \\
 </mtable>
 <annotation encoding="math/tex">\eqalign{
 e^{-E(v, h)} &amp;= e^{\sum_j [{(\sum_i {{v_i w_{ij}} + b_j}}) h_j]} e^{\sum_i{a_i v_i}} \\
-\sum_h {e^{\sum_j {h_j}}} &amp;= \sum_h {\prod_j e^{h_j}} = \sum_{h_1} \sum_{h_2}... \sum_{h_j} {\prod_j {e^{h_j}} } \\
+\sum_h {e^{\sum_j {h_j}}} &amp;= \sum_h {\prod_j e^{h_j}} = \sum_{h_1, h_2, ..., h_j} {\prod_j e^{h_j}} \\
+&amp;= \sum_{h_1} \sum_{h_2}... \sum_{h_j} {\prod_j {e^{h_j}} } \\
 &amp;= \sum_{h_1} {e^{h_1}} \sum_{h_2} {e^{h_2}} ...  \sum_{hj} {e^{h_j}}
 }</annotation></semantics></math></div><p class="" style="">xx</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mi>p</mi>

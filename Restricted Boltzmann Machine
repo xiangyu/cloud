@@ -1,4 +1,4 @@
-<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+<p class="">Energy of a configuration (v,h):</p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mi>E</mi>
   <mo stretchy="false">(</mo>
   <mi>v</mi>
@@ -62,4 +62,4 @@
       <mi>j</mi>
     </msub>
   </mrow>
-</mrow><annotation encoding="math/tex">E(v,h) = - \sum_{i,j}{v_i w_{ij} h_j} - \sum_i{a_i v_i} - \sum_j{b_j v_j}</annotation></semantics></math></div>
+</mrow><annotation encoding="math/tex">E(v,h) = - \sum_{i,j}{v_i w_{ij} h_j} - \sum_i{a_i v_i} - \sum_j{b_j v_j}</annotation></semantics></math></div><h3>Hopfield Network</h3>

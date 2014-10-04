@@ -453,7 +453,9 @@ E(v,h) = - \sum_j [{(\sum_i {{v_i w_{ij}} + b_j}}) h_j] - \sum_i{a_i v_i} \\
   <mo>=</mo>
   <munder>
     <mo>∑<!-- ∑ --></mo>
-    <mi>h</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>h</mi>
+    </mrow>
   </munder>
   <mi>p</mi>
   <mo stretchy="false">(</mo>
@@ -464,175 +466,11 @@ E(v,h) = - \sum_j [{(\sum_i {{v_i w_{ij}} + b_j}}) h_j] - \sum_i{a_i v_i} \\
   <mo>=</mo>
   <munder>
     <mo>∑<!-- ∑ --></mo>
-    <mi>h</mi>
-  </munder>
-  <mrow class="MJX-TeXAtom-ORD">
-    <mfrac>
-      <msup>
-        <mi>e</mi>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mo>−<!-- − --></mo>
-          <mi>E</mi>
-          <mo stretchy="false">(</mo>
-          <mi>v</mi>
-          <mo>,</mo>
-          <mi>h</mi>
-          <mo stretchy="false">)</mo>
-        </mrow>
-      </msup>
-      <mrow>
-        <munder>
-          <mo>∑<!-- ∑ --></mo>
-          <mrow class="MJX-TeXAtom-ORD">
-            <msup>
-              <mi>v</mi>
-              <mo>′</mo>
-            </msup>
-            <mo>,</mo>
-            <msup>
-              <mi>h</mi>
-              <mo>′</mo>
-            </msup>
-          </mrow>
-        </munder>
-        <msup>
-          <mi>e</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mo>−<!-- − --></mo>
-            <mi>E</mi>
-            <mo stretchy="false">(</mo>
-            <msup>
-              <mi>v</mi>
-              <mo>′</mo>
-            </msup>
-            <mo>,</mo>
-            <msup>
-              <mi>h</mi>
-              <mo>′</mo>
-            </msup>
-            <mo stretchy="false">)</mo>
-          </mrow>
-        </msup>
-      </mrow>
-    </mfrac>
-  </mrow>
-  <mspace linebreak="newline"></mspace>
-  <mi>p</mi>
-  <mo stretchy="false">(</mo>
-  <mi>v</mi>
-  <mo stretchy="false">)</mo>
-  <mo>=</mo>
-  <mrow class="MJX-TeXAtom-ORD">
-    <mfrac>
-      <mrow>
-        <munder>
-          <mo>∑<!-- ∑ --></mo>
-          <mi>h</mi>
-        </munder>
-        <mrow class="MJX-TeXAtom-ORD">
-          <msup>
-            <mi>e</mi>
-            <mrow class="MJX-TeXAtom-ORD">
-              <mo>−<!-- − --></mo>
-              <mi>E</mi>
-              <mo stretchy="false">(</mo>
-              <mi>v</mi>
-              <mo>,</mo>
-              <mi>h</mi>
-              <mo stretchy="false">)</mo>
-            </mrow>
-          </msup>
-        </mrow>
-      </mrow>
-      <mrow>
-        <munder>
-          <mo>∑<!-- ∑ --></mo>
-          <mrow class="MJX-TeXAtom-ORD">
-            <msup>
-              <mi>v</mi>
-              <mo>′</mo>
-            </msup>
-            <mo>,</mo>
-            <msup>
-              <mi>h</mi>
-              <mo>′</mo>
-            </msup>
-          </mrow>
-        </munder>
-        <msup>
-          <mi>e</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mo>−<!-- − --></mo>
-            <mi>E</mi>
-            <mo stretchy="false">(</mo>
-            <msup>
-              <mi>v</mi>
-              <mo>′</mo>
-            </msup>
-            <mo>,</mo>
-            <msup>
-              <mi>h</mi>
-              <mo>′</mo>
-            </msup>
-            <mo stretchy="false">)</mo>
-          </mrow>
-        </msup>
-      </mrow>
-    </mfrac>
-  </mrow>
-  <mspace linebreak="newline"></mspace>
-</mrow><annotation encoding="math/tex">p(v) = \sum_h p(v,h) = \sum_h {e^{-E(v,h)} \over \sum_{v',h'} e^{-E(v',h')} } \\
-p(v) = { \sum_h {e^{-E(v,h)}} \over \sum_{v',h'} e^{-E(v',h')} }
-\\
-</annotation></semantics></math></div><p class="">xx</p><p class=""><br></p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
-  <mrow class="MJX-TeXAtom-ORD">
-    <mfrac>
-      <mrow>
-        <mi mathvariant="normal">∂<!-- ∂ --></mi>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mi>log</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>p</mi>
-            <mo stretchy="false">(</mo>
-            <mi>v</mi>
-            <mo stretchy="false">)</mo>
-          </mrow>
-        </mrow>
-      </mrow>
-      <mrow>
-        <mi mathvariant="normal">∂<!-- ∂ --></mi>
-        <mrow class="MJX-TeXAtom-ORD">
-          <msub>
-            <mi>w</mi>
-            <mrow class="MJX-TeXAtom-ORD">
-              <mi>i</mi>
-              <mi>j</mi>
-            </mrow>
-          </msub>
-        </mrow>
-      </mrow>
-    </mfrac>
-  </mrow>
-  <mo>=</mo>
-  <mrow class="MJX-TeXAtom-ORD">
-    <mfrac>
-      <mi mathvariant="normal">∂<!-- ∂ --></mi>
-      <msub>
-        <mi>w</mi>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mi>i</mi>
-          <mi>j</mi>
-        </mrow>
-      </msub>
-    </mfrac>
-  </mrow>
-  <mo stretchy="false">(</mo>
-  <mi>log</mi>
-  <mrow class="MJX-TeXAtom-ORD">
-    <munder>
-      <mo>∑<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
       <mi>h</mi>
-    </munder>
+    </mrow>
+  </munder>
+  <mfrac>
     <msup>
       <mi>e</mi>
       <mrow class="MJX-TeXAtom-ORD">
@@ -645,11 +483,110 @@ p(v) = { \sum_h {e^{-E(v,h)}} \over \sum_{v',h'} e^{-E(v',h')} }
         <mo stretchy="false">)</mo>
       </mrow>
     </msup>
-  </mrow>
-  <mo stretchy="false">)</mo>
-  <mo>−<!-- − --></mo>
-  <mrow class="MJX-TeXAtom-ORD">
-    <mfrac>
+    <mrow>
+      <munder>
+        <mo>∑<!-- ∑ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msup>
+            <mi>v</mi>
+            <mo>′</mo>
+          </msup>
+          <mo>,</mo>
+          <msup>
+            <mi>h</mi>
+            <mo>′</mo>
+          </msup>
+        </mrow>
+      </munder>
+      <msup>
+        <mi>e</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>−<!-- − --></mo>
+          <mi>E</mi>
+          <mo stretchy="false">(</mo>
+          <msup>
+            <mi>v</mi>
+            <mo>′</mo>
+          </msup>
+          <mo>,</mo>
+          <msup>
+            <mi>h</mi>
+            <mo>′</mo>
+          </msup>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </msup>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <munder>
+        <mo>∑<!-- ∑ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>h</mi>
+        </mrow>
+      </munder>
+      <msup>
+        <mi>e</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>−<!-- − --></mo>
+          <mi>E</mi>
+          <mo stretchy="false">(</mo>
+          <mi>v</mi>
+          <mo>,</mo>
+          <mi>h</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </msup>
+    </mrow>
+    <mrow>
+      <munder>
+        <mo>∑<!-- ∑ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msup>
+            <mi>v</mi>
+            <mo>′</mo>
+          </msup>
+          <mo>,</mo>
+          <msup>
+            <mi>h</mi>
+            <mo>′</mo>
+          </msup>
+        </mrow>
+      </munder>
+      <msup>
+        <mi>e</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>−<!-- − --></mo>
+          <mi>E</mi>
+          <mo stretchy="false">(</mo>
+          <msup>
+            <mi>v</mi>
+            <mo>′</mo>
+          </msup>
+          <mo>,</mo>
+          <msup>
+            <mi>h</mi>
+            <mo>′</mo>
+          </msup>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </msup>
+    </mrow>
+  </mfrac>
+</mrow><annotation encoding="math/tex">p(v)=\sum_{h}p(v,h)=\sum_{h}\frac{e^{-E(v,h)}}{\sum_{v',h'}e^{-E(v',h')}}=\frac{\sum_{h}e^{-E(v,h)}}{\sum_{v',h'}e^{-E(v',h')}}</annotation></semantics></math></div><p class="">xx</p><p class=""><br></p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+  <mfrac>
+    <mrow>
+      <mi mathvariant="normal">∂<!-- ∂ --></mi>
+      <mi>log</mi>
+      <mo>⁡<!-- ⁡ --></mo>
+      <mi>p</mi>
+      <mo stretchy="false">(</mo>
+      <mi>v</mi>
+      <mo stretchy="false">)</mo>
+    </mrow>
+    <mrow>
       <mi mathvariant="normal">∂<!-- ∂ --></mi>
       <msub>
         <mi>w</mi>
@@ -658,46 +595,91 @@ p(v) = { \sum_h {e^{-E(v,h)}} \over \sum_{v',h'} e^{-E(v',h')} }
           <mi>j</mi>
         </mrow>
       </msub>
-    </mfrac>
-  </mrow>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mi mathvariant="normal">∂<!-- ∂ --></mi>
+    <msub>
+      <mi>w</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi>i</mi>
+        <mi>j</mi>
+      </mrow>
+    </msub>
+  </mfrac>
   <mo stretchy="false">(</mo>
   <mi>log</mi>
-  <mrow class="MJX-TeXAtom-ORD">
-    <munder>
-      <mo>∑<!-- ∑ --></mo>
-      <mrow class="MJX-TeXAtom-ORD">
-        <msup>
-          <mi>v</mi>
-          <mo>′</mo>
-        </msup>
-        <mo>,</mo>
-        <msup>
-          <mi>h</mi>
-          <mo>′</mo>
-        </msup>
-      </mrow>
-    </munder>
-    <msup>
-      <mi>e</mi>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo>−<!-- − --></mo>
-        <mi>E</mi>
-        <mo stretchy="false">(</mo>
-        <msup>
-          <mi>v</mi>
-          <mo>′</mo>
-        </msup>
-        <mo>,</mo>
-        <msup>
-          <mi>h</mi>
-          <mo>′</mo>
-        </msup>
-        <mo stretchy="false">)</mo>
-      </mrow>
-    </msup>
-  </mrow>
+  <mo>⁡<!-- ⁡ --></mo>
+  <munder>
+    <mo>∑<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>h</mi>
+    </mrow>
+  </munder>
+  <msup>
+    <mi>e</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>−<!-- − --></mo>
+      <mi>E</mi>
+      <mo stretchy="false">(</mo>
+      <mi>v</mi>
+      <mo>,</mo>
+      <mi>h</mi>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </msup>
   <mo stretchy="false">)</mo>
-</mrow><annotation encoding="math/tex">{ \partial {\log{p(v)}} \over \partial {w_{ij}} } = {\partial \over w_{ij} }(\log{ \sum_h e^{-E(v,h)} }) - {\partial \over w_{ij} }(\log{ \sum_{v',h'} e^{-E(v',h')} })</annotation></semantics></math></div><p class=""><br></p><p class="">with&nbsp;</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
+  <mo>−<!-- − --></mo>
+  <mfrac>
+    <mi mathvariant="normal">∂<!-- ∂ --></mi>
+    <msub>
+      <mi>w</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi>i</mi>
+        <mi>j</mi>
+      </mrow>
+    </msub>
+  </mfrac>
+  <mo stretchy="false">(</mo>
+  <mi>log</mi>
+  <mo>⁡<!-- ⁡ --></mo>
+  <munder>
+    <mo>∑<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <msup>
+        <mi>v</mi>
+        <mo>′</mo>
+      </msup>
+      <mo>,</mo>
+      <msup>
+        <mi>h</mi>
+        <mo>′</mo>
+      </msup>
+    </mrow>
+  </munder>
+  <msup>
+    <mi>e</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>−<!-- − --></mo>
+      <mi>E</mi>
+      <mo stretchy="false">(</mo>
+      <msup>
+        <mi>v</mi>
+        <mo>′</mo>
+      </msup>
+      <mo>,</mo>
+      <msup>
+        <mi>h</mi>
+        <mo>′</mo>
+      </msup>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </msup>
+  <mo stretchy="false">)</mo>
+  <mspace linebreak="newline"></mspace>
+</mrow><annotation encoding="math/tex">\frac{\partial\log p(v)}{\partial w_{ij}}=\frac{\partial}{w_{ij}}(\log\sum_{h}e^{-E(v,h)})-\frac{\partial}{w_{ij}}(\log\sum_{v',h'}e^{-E(v',h')}) \\
+</annotation></semantics></math></div><p class=""><br></p><p class="">with&nbsp;</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
 <mtable columnalign="right left" rowspacing=".5em" columnspacing="thickmathspace" displaystyle="true">
   <mtr>
     <mtd>

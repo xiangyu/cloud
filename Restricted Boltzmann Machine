@@ -640,7 +640,7 @@ P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\
     </mrow>
   </mfrac>
 </mstyle>
-<annotation encoding="math/asciimath">\frac{\partial\log p(v)}{\partial w_{ij}}</annotation></semantics></math></p><p class=""><br></p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
+<annotation encoding="math/asciimath">\frac{\partial\log p(v)}{\partial w_{ij}}</annotation></semantics></math>&nbsp;is:</p><p class=""><br></p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
 <mtable columnalign="right left" rowspacing=".5em" columnspacing="thickmathspace" displaystyle="true">
   <mtr>
     <mtd>
@@ -1203,37 +1203,7 @@ P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\
 &amp;=-\sum_{h}[p(h|v)\frac{\partial E(v,h)}{\partial w_{ij}}]+\sum_{v',h'}[p(v',h')\frac{\partial E(v',h')}{\partial w_{ij}}] \\
 &amp;= -\sum_{h}[p(h|v)v_{i}h_{j}]+\sum_{v',h'}[p(v',h')v_{i}'h_{j}'] \\
 &amp;= -\sum_{h}[p(h|v)v_{i}h_{j}]+\sum_{v'}[p(v')\sum_{h'}[p(h'|v')v_{i}'h_{j}']]
-}</annotation></semantics></math></div><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
-<mtable columnalign="right left" rowspacing=".5em" columnspacing="thickmathspace" displaystyle="true">
-  <mtr>
-    <mtd>
-      <mfrac>
-        <mrow>
-          <mi mathvariant="normal">∂<!-- ∂ --></mi>
-          <mi>log</mi>
-          <mo>⁡<!-- ⁡ --></mo>
-          <mi>p</mi>
-          <mo stretchy="false">(</mo>
-          <mi>v</mi>
-          <mo stretchy="false">)</mo>
-        </mrow>
-        <mrow>
-          <mi mathvariant="normal">∂<!-- ∂ --></mi>
-          <msub>
-            <mi>w</mi>
-            <mrow class="MJX-TeXAtom-ORD">
-              <mi>i</mi>
-              <mi>j</mi>
-            </mrow>
-          </msub>
-        </mrow>
-      </mfrac>
-    </mtd>
-  </mtr>
-</mtable>
-<annotation encoding="math/tex">\eqalign{
-\frac{\partial\log p(v)}{\partial w_{ij}}
- }</annotation></semantics></math></div><p class="">Since&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+}</annotation></semantics></math></div><p class=""></p><p class="">Since&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <munder>
     <mo>∑<!-- ∑ --></mo>
     <mrow class="MJX-TeXAtom-ORD">

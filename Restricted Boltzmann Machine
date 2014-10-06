@@ -249,7 +249,16 @@
   <mspace linebreak="newline"></mspace>
 </mrow><annotation encoding="math/tex">P(x) = {1 \over Z} \prod_c {\psi_c(x_c)}, Z = \sum_{x'} {\prod_c {\psi_c({x'}_c)}} \\
 P(x) = {1 \over Z} e^{ln \, {\prod_c {\psi_c(x_c)}}} = {1 \over Z} e^{\sum_c {ln \, {\psi_c(x_c)}}} \\
-P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\sum_c {ln \, {\psi_c(x_c)}} \\</annotation></semantics></math></div><p class="" style="">We have:</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\sum_c {ln \, {\psi_c(x_c)}} \\</annotation></semantics></math></div><p class="" style="">We have <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
+<mstyle displaystyle="true">
+  <mi>p</mi>
+  <mrow>
+    <mo>(</mo>
+    <mi>v</mi>
+    <mo>)</mo>
+  </mrow>
+</mstyle>
+<annotation encoding="math/asciimath">p(v)</annotation></semantics></math>:</p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mi>p</mi>
   <mo stretchy="false">(</mo>
   <mi>v</mi>
@@ -379,7 +388,20 @@ P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\
       </msup>
     </mrow>
   </mfrac>
-</mrow><annotation encoding="math/tex">p(v)=\sum_{h}p(v,h)=\sum_{h}\frac{e^{-E(v,h)}}{\sum_{v',h'}e^{-E(v',h')}}=\frac{\sum_{h}e^{-E(v,h)}}{\sum_{v',h'}e^{-E(v',h')}}</annotation></semantics></math></div><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
+</mrow><annotation encoding="math/tex">p(v)=\sum_{h}p(v,h)=\sum_{h}\frac{e^{-E(v,h)}}{\sum_{v',h'}e^{-E(v',h')}}=\frac{\sum_{h}e^{-E(v,h)}}{\sum_{v',h'}e^{-E(v',h')}}</annotation></semantics></math></div><p class="">and <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
+<mstyle displaystyle="true">
+  <mi>p</mi>
+  <mrow>
+    <mo>(</mo>
+    <mi>h</mi>
+    <mrow>
+      <mo>|</mo>
+    </mrow>
+    <mi>v</mi>
+    <mo>)</mo>
+  </mrow>
+</mstyle>
+<annotation encoding="math/asciimath">p(h|v)</annotation></semantics></math>:</p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <mi>p</mi>
   <mo stretchy="false">(</mo>
   <mi>h</mi>
@@ -591,7 +613,34 @@ P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\
     </mrow>
   </mfrac>
 </mrow><annotation encoding="math/tex">p(h|v)=\frac{p(h,v)}{p(v)}=\frac{p(v,h)}{\sum_{h'}p(v,h')}=\frac{\frac{e^{-E(v,h)}}{\sum_{v'',h''}e^{-E(v'',h'')}}}{\sum_{h'}\frac{e^{-E(v,h')}}{\sum_{v'',h''}e^{-E(v'',h'')}}}=\frac{e^{-E(v,h)}}{\sum_{h'}e^{-E(v,h')}}
- </annotation></semantics></math></div><p class=""><br></p><p class="">xx</p><p class=""><br></p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
+ </annotation></semantics></math></div><p class=""><br></p><p class="">Then&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
+<mstyle displaystyle="true">
+  <mfrac>
+    <mrow>
+      <mo>∂</mo>
+      <mrow>
+        <mi>log</mi>
+        <mi>p</mi>
+      </mrow>
+      <mrow>
+        <mo>(</mo>
+        <mi>v</mi>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+    <mrow>
+      <mo>∂</mo>
+      <msub>
+        <mi>w</mi>
+        <mrow>
+          <mi>i</mi>
+          <mi>j</mi>
+        </mrow>
+      </msub>
+    </mrow>
+  </mfrac>
+</mstyle>
+<annotation encoding="math/asciimath">\frac{\partial\log p(v)}{\partial w_{ij}}</annotation></semantics></math></p><p class=""><br></p><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
 <mtable columnalign="right left" rowspacing=".5em" columnspacing="thickmathspace" displaystyle="true">
   <mtr>
     <mtd>
@@ -976,37 +1025,8 @@ P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\
       <mo stretchy="false">]</mo>
     </mtd>
   </mtr>
-</mtable>
-<annotation encoding="math/tex">\eqalign{
-\frac{\partial\log p(v)}{\partial w_{ij}}&amp;=\frac{\partial}{w_{ij}}(\log\sum_{h}e^{-E(v,h)})-\frac{\partial}{w_{ij}}(\log\sum_{v',h'}e^{-E(v',h')}) \\
-&amp;=-\frac{1}{\sum_{h'}e^{-E(v,h')}}\sum_{h}[e^{-E(v,h)}\frac{\partial E(v,h)}{\partial w_{ij}}]+\frac{1}{\sum_{v'',h''}e^{-E(v'',h'')}}\sum_{v',h'}[e^{-E(v',h')}\frac{\partial E(v',h')}{\partial w_{ij}}] \\
-&amp;=-\sum_{h}[p(h|v)\frac{\partial E(v,h)}{\partial w_{ij}}]+\sum_{v',h'}[p(v',h')\frac{\partial E(v',h')}{\partial w_{ij}}]
-}</annotation></semantics></math></div><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
-<mtable columnalign="right left" rowspacing=".5em" columnspacing="thickmathspace" displaystyle="true">
   <mtr>
-    <mtd>
-      <mfrac>
-        <mrow>
-          <mi mathvariant="normal">∂<!-- ∂ --></mi>
-          <mi>log</mi>
-          <mo>⁡<!-- ⁡ --></mo>
-          <mi>p</mi>
-          <mo stretchy="false">(</mo>
-          <mi>v</mi>
-          <mo stretchy="false">)</mo>
-        </mrow>
-        <mrow>
-          <mi mathvariant="normal">∂<!-- ∂ --></mi>
-          <msub>
-            <mi>w</mi>
-            <mrow class="MJX-TeXAtom-ORD">
-              <mi>i</mi>
-              <mi>j</mi>
-            </mrow>
-          </msub>
-        </mrow>
-      </mfrac>
-    </mtd>
+    <mtd></mtd>
     <mtd>
       <mo>=</mo>
       <mo>−<!-- − --></mo>
@@ -1178,8 +1198,41 @@ P(x) = {1 \over Z} e^{-E(x)} = {e^{-E(x)} \over \sum_{x'} e^{-E(x')}}, E(x) = -\
   </mtr>
 </mtable>
 <annotation encoding="math/tex">\eqalign{
-\frac{\partial\log p(v)}{\partial w_{ij}} &amp;= -\sum_{h}[p(h|v)v_{i}h_{j}]+\sum_{v',h'}[p(v',h')v_{i}'h_{j}'] \\
+\frac{\partial\log p(v)}{\partial w_{ij}}&amp;=\frac{\partial}{w_{ij}}(\log\sum_{h}e^{-E(v,h)})-\frac{\partial}{w_{ij}}(\log\sum_{v',h'}e^{-E(v',h')}) \\
+&amp;=-\frac{1}{\sum_{h'}e^{-E(v,h')}}\sum_{h}[e^{-E(v,h)}\frac{\partial E(v,h)}{\partial w_{ij}}]+\frac{1}{\sum_{v'',h''}e^{-E(v'',h'')}}\sum_{v',h'}[e^{-E(v',h')}\frac{\partial E(v',h')}{\partial w_{ij}}] \\
+&amp;=-\sum_{h}[p(h|v)\frac{\partial E(v,h)}{\partial w_{ij}}]+\sum_{v',h'}[p(v',h')\frac{\partial E(v',h')}{\partial w_{ij}}] \\
+&amp;= -\sum_{h}[p(h|v)v_{i}h_{j}]+\sum_{v',h'}[p(v',h')v_{i}'h_{j}'] \\
 &amp;= -\sum_{h}[p(h|v)v_{i}h_{j}]+\sum_{v'}[p(v')\sum_{h'}[p(h'|v')v_{i}'h_{j}']]
+}</annotation></semantics></math></div><p class=""></p><div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics>
+<mtable columnalign="right left" rowspacing=".5em" columnspacing="thickmathspace" displaystyle="true">
+  <mtr>
+    <mtd>
+      <mfrac>
+        <mrow>
+          <mi mathvariant="normal">∂<!-- ∂ --></mi>
+          <mi>log</mi>
+          <mo>⁡<!-- ⁡ --></mo>
+          <mi>p</mi>
+          <mo stretchy="false">(</mo>
+          <mi>v</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mrow>
+          <mi mathvariant="normal">∂<!-- ∂ --></mi>
+          <msub>
+            <mi>w</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>i</mi>
+              <mi>j</mi>
+            </mrow>
+          </msub>
+        </mrow>
+      </mfrac>
+    </mtd>
+  </mtr>
+</mtable>
+<annotation encoding="math/tex">\eqalign{
+\frac{\partial\log p(v)}{\partial w_{ij}}
  }</annotation></semantics></math></div><p class="">Since&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow>
   <munder>
     <mo>∑<!-- ∑ --></mo>
